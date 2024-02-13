@@ -63,6 +63,8 @@ namespace HomeWork16
                     DataSource = @"(localdb)\MSSQLLocalDB",
                     InitialCatalog = "UsersDB",
                     IntegratedSecurity = true,
+                    UserID = "your_user",
+                    Password = "your_password",
                     Pooling = false
                 };
 
