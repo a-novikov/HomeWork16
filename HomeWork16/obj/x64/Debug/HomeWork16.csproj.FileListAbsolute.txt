@@ -13,3 +13,7 @@ C:\Users\swcat\source\repos\HomeWork16\HomeWork16\obj\x64\Debug\HomeWork16.cspro
 C:\Users\swcat\source\repos\HomeWork16\HomeWork16\obj\x64\Debug\HomeWork16.exe
 C:\Users\swcat\source\repos\HomeWork16\HomeWork16\obj\x64\Debug\HomeWork16.pdb
 C:\Users\swcat\source\repos\HomeWork16\HomeWork16\obj\x64\Debug\HomeWork16.csproj.AssemblyReference.cache
+C:\Users\swcat\source\repos\HomeWork16\HomeWork16\obj\x64\Debug\AddUserWindow.g.cs
+C:\Users\swcat\source\repos\HomeWork16\HomeWork16\obj\x64\Debug\AddUserWindow.baml
+C:\Users\swcat\source\repos\HomeWork16\HomeWork16\obj\x64\Debug\AddBuyInfoWindow.g.cs
+C:\Users\swcat\source\repos\HomeWork16\HomeWork16\obj\x64\Debug\AddBuyInfoWindow.baml

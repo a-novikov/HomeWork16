@@ -16,9 +16,25 @@
             <TabItem>
                 <TabItem.Header>
                     <Grid>
+                        <TextBlock Text="Консоль"></TextBlock>
+                    </Grid>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <TextBox Name="ConsoleText"
+                            TextWrapping="Wrap"
+                            AcceptsReturn="True"
+                            HorizontalScrollBarVisibility="Disabled"
+                            VerticalScrollBarVisibility="Auto"/>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            
+            <TabItem>
+                <TabItem.Header>
+                    <Grid>
                         <TextBlock Text="Покупатели"></TextBlock>
                     </Grid>
-
                 </TabItem.Header>
                 <TabItem.Content>
                     <Grid>
@@ -68,10 +84,13 @@
                             </DataGrid.Columns>
                             <DataGrid.ContextMenu>
                                 <ContextMenu>
-                                    <!--<MenuItem Header="Добавить" Click="MenuItemAddClick"/>
-                    <MenuItem Header="Удалить" Click="MenuItemDeleteClick"/>-->
+                                    <MenuItem Header="Добавить" Click="MenuItemAddClick"/>
+                                    <MenuItem Header="Информация о покупках" Click="BuyInfoClick"/>
+                                    <MenuItem Header="Удалить" Click="MenuItemDeleteClick"/>
                                 </ContextMenu>
                             </DataGrid.ContextMenu>
+
+
                         </DataGrid>
                     </Grid>
                 </TabItem.Content>
@@ -94,7 +113,9 @@
                                   SelectionMode="Single" 
                                   AutoGenerateColumns="False" 
                                   ItemsSource="{Binding}"
-                                  IsReadOnly="False"                                   
+                                  IsReadOnly="False"
+                                  CurrentCellChanged="GVCurrentCellChangedBuy"
+                                  CellEditEnding="GVCellEditEndingBuy"
                                   >
                             <DataGrid.Columns>
                                 <DataGridTextColumn x:Name="idBuy" 
@@ -119,8 +140,8 @@
                             </DataGrid.Columns>
                             <DataGrid.ContextMenu>
                                 <ContextMenu>
-                                    <!--<MenuItem Header="Добавить" Click="MenuItemAddClick"/>
-                    <MenuItem Header="Удалить" Click="MenuItemDeleteClick"/>-->
+                                    <MenuItem Header="Добавить" Click="MenuItemAddBuyClick"/>                                    
+                                    <MenuItem Header="Удалить" Click="MenuItemDeleteBuyClick"/>
                                 </ContextMenu>
                             </DataGrid.ContextMenu>
                         </DataGrid>
